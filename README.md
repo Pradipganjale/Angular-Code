@@ -1,4 +1,2 @@
 # Angular-Code
 
-test
-ddd
