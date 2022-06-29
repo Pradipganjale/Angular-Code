@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p>this is message :</p>
+    <input type="text" onkeyup="Display(event)" />
+
+</body>
+</html>
+<script>
+
+    function Display(event){
+
+        let val = event.target.value;
+
+        let arr=["Angular","Ract js","JavaScript","HTML","CSS","ES6","JQuery","Ajax"];
+      //  console.log("length ::"+arr.length);
+        for(let i=0;i<arr.length;i++)
+        {   
+            if(arr[i]===(val))
+            {
+                console.log("valid language "+i +" " +arr[i]);
+                break;
+                
+            }
+            else{
+                console.log("not a valid language");
+            }
+        }
+    }
+</script>

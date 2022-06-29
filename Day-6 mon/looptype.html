@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+</html>
+<script>
+
+let arrColors = ["red","green","blue","yellow","white","black"];
+console.log(arrColors.length);
+
+    // can not return data
+let Result1 = arrColors.forEach(item=>{
+     console.log("forEach Item ", item);
+    // return item;
+})
+console.log(Result1);
+// it return data
+// we can change value during return
+let Result2 = arrColors.map(item=>{
+     console.log("map Item ", item);
+    // return "color Name : " + item;
+})
+console.log(Result2);
+// it return data
+// we can not change value during return
+let Result3 = arrColors.filter(item=>{
+     console.log("filter Item ", item);
+        // return item;
+})
+console.log(Result3);
+
+</script>
