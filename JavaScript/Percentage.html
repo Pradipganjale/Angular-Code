@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2>Result</h2>
+    <Script>
+        function sum(math,comp,sci,chem,bio)
+        {
+            var sum1=math+comp+sci+chem+bio;
+
+            // document.write(sum1);
+            // console.log(sum1);
+           return sum1;
+        }
+       
+        function per(total)
+        {
+            var per1=total/500*100;
+            
+            document.write("percentage :: "+per1+"<br>");
+
+            if (per1>=80) {
+                document.write(" Grede ::<b>A</b><br>");
+            }
+            else if(per1>=60)
+            {
+                document.write(" Grede ::<b>B</b><br>");
+            }
+            else
+            {
+                document.write(" Grede ::<b>C</b><br>");
+            }
+        }
+        
+        var total1=sum(80,75,50,80,85);
+        per(total1);
+        document.write("Total :: "+total1+"<br>");
+    
+    </Script>
+</body>
+</html>

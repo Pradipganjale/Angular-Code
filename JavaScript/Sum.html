@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h3>Digit Sum</h3>
+    <Script>
+
+        function sum(num)
+        {
+            // console.log("num ::"+ num);
+            var sum1=0;
+            var rem=0;
+            while(num>0)
+            {
+                // console.log("num ::"+ num);
+
+                rem=num%10;
+                sum1=sum1+rem;
+                // console.log("rem ::"+ rem);
+                // console.log("sum ::"+ sum);
+
+                num=Math.floor(num/10);
+            }
+             //console.log("finsl sum ::"+ sum1);
+
+            return sum1;
+        }
+        document.write(sum(111));
+    </Script>
+</body>
+</html>

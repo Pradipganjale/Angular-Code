@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+   <script>
+     function palindrome(num)
+    {
+        var rem;
+        var rev=0;
+        var temp=num;
+        while(num>0)
+        {
+            rem=num%10;
+            rev=(rev*10)+rem;
+            num=Math.floor(num/10);
+        }
+        // console.log("temp :: "+temp);
+        // console.log("rev ::"+rev);
+        if(temp==rev)
+        {
+            return document.write("number is palindrome <br>");
+
+        }
+        else{
+            return document.write("number is not palindrome <br>");
+        }
+    }
+        palindrome(121);
+       
+
+   </script>
+</body>
+</html>

@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h4>Salary slip</h4>
+    <script>
+
+        var Netsalary=prompt("enter your total Salary");
+        var HRA=15/100*Netsalary;
+        var PF=7/100*Netsalary;
+        var DA=20/100*Netsalary;
+        
+        var total=HRA+PF+DA;
+        var salary=Netsalary-total;
+        document.write("HRA :: " + HRA + "<br>" + "  PF :: " + PF +"<br>"+" DA :: "+DA+" <br>");
+        document.write("<br>")
+        document.write("<b>Net salry </b>:: "+salary);
+
+    </script>
+</body>
+</html>
