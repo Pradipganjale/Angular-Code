@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+</head>
+<body>
+    <div class="container ">
+        <div class="row mt-5">
+            <div class="col-md-4">
+                <div id="box1" class="bg-warning text-white p-5 ">Box first</div>
+            </div>
+            <div class="col-md-4">
+                <div id="box2" class="bg-success text-white p-5" style="display:none">Box Second</div>
+            </div>
+            <div class="col-md-4">
+                <div id="box3" class="bg-danger text-white p-5">Box Third</div>
+            </div>
+            <div class="mt-4">
+                <button id="bt" class="btn btn-primary text-white form-group ">Execute</button>
+            </div>
+
+        </div>
+
+    </div>
+    
+</body>
+</html>
+<script>
+    $(document).ready(function () {
+      //  console.log("Web page Loading !!!");
+        $("#bt").click(function () {
+
+            $("#box1").fadeOut(2000);
+            $("#box2").fadeIn(3000);
+            $("#box3").fadeOut(2000);
+
+        })
+
+    })
+</script>
