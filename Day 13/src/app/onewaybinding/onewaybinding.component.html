@@ -1,0 +1,31 @@
+<p>onewaybinding works!</p>
+
+<div class="container">
+    <div class="row">
+        <div class="col-md-4"></div>
+        <div class="col-md-4">
+            <div >
+                <h3>Contact form</h3>
+            </div>
+            <div>
+                <label class="form-group"> First Name</label>
+                <input type="text" #firstname class="form-control"/>
+            </div>
+            <div>
+                <label class="form-group">Last Name</label>
+                <input type="text" #lastname class="form-control"/>
+            </div>
+            <br>
+            <div>
+                <button class="btn btn-primary" (click)="onSubmit(firstname,lastname)">Submit</button>
+            </div>
+            <div>
+            <b>
+              <p>First Name Length :{{firstval.length}}</p>  
+               <p>Last Name Length : {{lastval.length}}</p> 
+            </b>
+            </div>
+
+        </div>
+    </div>
+</div>
