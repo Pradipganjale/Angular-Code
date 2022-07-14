@@ -1,0 +1,37 @@
+<!-- <p>display1 works!</p> -->
+<div class="container">
+    <div class="row mt-3">
+        <div class="col-6 bg-light">
+            <div class="bg-success text-center text-white">
+                <h3><label>Case Format</label></h3>
+             </div>
+            <div>
+                <h5>Upper Case : {{data1 | uppercase}}</h5>
+                <h5>Lower Case : {{data1 | lowercase}}</h5>
+                <h5>Title Case : {{data1 | titlecase}}</h5>
+            </div>
+            <hr>
+            <div class="bg-success text-center text-white">
+                <h3><label>Currency</label></h3>
+             </div>
+            <div>
+                <h5>Training Fee Rupees : {{traningFee | currency:'INR'}}</h5>
+                <h5>Training Fee Doller : {{traningFee | currency:'USD'}}</h5>
+                <h5>Training Fee Euro : {{traningFee | currency:'EUR'}}</h5>
+            </div>
+            <hr>
+            <div class="bg-success text-center text-white">
+               <h3><label>Date Format</label></h3>
+            </div>
+            <div>
+                <h5>Today Date : {{todayDate | date:'dd-MM-yyyy'}}</h5>
+                <h5>Today Date : {{todayDate | date:'dd-MMM-yyyy'}}</h5>
+            </div>
+            
+        </div>
+    </div>
+
+</div>
+
+
+

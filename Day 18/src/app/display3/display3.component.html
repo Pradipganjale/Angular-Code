@@ -1,0 +1,19 @@
+<!-- <p>display3 works!</p> -->
+
+
+
+    <div class="bg-success text-white text-center mt-3">
+        <h3>User List</h3> 
+    </div>
+    <div class="bg-light">
+        <table class="table table-striped mt-3">
+            <th>User Id</th>
+            <th>User Name</th>
+            <th>Status</th>
+            <tr *ngFor="let user of arrUsers">
+                <td>{{user.userId}}</td>
+                <td>{{user.username}}</td>
+                <td>{{user.status | userstatus}}</td>
+            </tr>
+        </table>
+</div>
