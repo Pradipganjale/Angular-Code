@@ -1,0 +1,30 @@
+<p>productlist works parrent!</p>
+
+<h5>Employee List</h5>
+<div class="row">
+    <div class="col-6">
+        <table class="table table-striped">
+            <thead>
+            <th>product Id</th>
+            <th>product Name</th>
+            <th>price</th>
+            <th>size</th>
+            <th>Status</th>
+            </thead>
+            <tbody *ngFor="let product of productData">
+            <tr >
+                <td>{{product.productid}}</td>
+                <td>{{product.productname}}</td>
+                <td>{{product.price}}</td>
+                <td>{{product.size}}</td>
+                <td>{{product.status}}</td>
+            </tr>
+        </tbody>
+        </table>
+    </div>
+    <div class="col-6">
+        <app-productadd (EventproductUpdate)="onProductUpdate($event)"></app-productadd>
+    </div>
+</div> 
+
+

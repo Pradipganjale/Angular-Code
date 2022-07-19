@@ -1,0 +1,28 @@
+<p>productadd works! Child</p>
+<h5>Template Driven Form</h5>
+<form #frmproduct="ngForm" (ngSubmit)="onSubmit(frmproduct)">
+    <div class="form-group">
+        <label>Product Id</label>
+        <input type="text" class="form-control" required name="productid" ngModel/>
+    </div>
+    <div class="form-group">
+        <label>Product Name</label>
+        <input type="text" class="form-control" name="productname" ngModel/>
+    </div>
+    <div class="form-group">
+        <label>Price</label>
+        <input type="number" class="form-control" required name="price" ngModel/>
+    </div>
+    <div class="form-group">
+        <label>size</label>
+        <input type="text" class="form-control" required name="size" ngModel/>
+    </div>
+    <div class="form-group">
+        <label>status</label>
+        <input type="text" class="form-control" required name="status" ngModel/>
+    </div>
+   
+    <div class="form-group">
+        <button class="btn btn-primary" type="submit" >Submit</button>
+    </div>
+</form> 
