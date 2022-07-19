@@ -1,0 +1,44 @@
+<!-- <p>display1 works!</p> -->
+<div class="mt-2">
+<form [formGroup]="frmClient" (ngSubmit)="onSubmit(frmClient.value)">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6">
+                <h3 class="bg-success text-white text-center ">Contact Form</h3>
+                <div class="form-group">
+                    <label class="font-weight-bold">Contact Id</label>
+                    <input type="text" class="form-control" formControlName="id"/>
+                    <span class="alert-danger " *ngIf="frmClient.controls['id'].hasError('required')">Please Enter Your Id...</span>
+                    <span class="alert-danger " *ngIf="frmClient.controls['id'].hasError('minlength')">ID Length Should Be Minimum 5 Characters...</span>
+                </div>
+                <div class="form-group">
+                    <label class="font-weight-bold">Contact Name</label>
+                    <input type="text" class="form-control" formControlName="name"/>
+                    <span class="alert-danger " *ngIf="frmClient.controls['name'].hasError('required')">Please Enter Your Contact Name...</span>
+                    <span class="alert-danger " *ngIf="frmClient.controls['name'].hasError('minlength')">Name Length Should Be Minimum 5 Characters...</span>
+                    <span class="alert-danger " *ngIf="frmClient.controls['name'].hasError('maxlength')">Name Length Should Be Maximum 12 Characters...</span>
+                </div>
+                <div class="form-group">
+                    <label class="font-weight-bold">Address</label>
+                    <input type="text" class="form-control" formControlName="address"/>
+                    <span class="alert-danger " *ngIf="frmClient.controls['address'].hasError('required')">Please Enter Your Address...</span>
+    
+                </div>
+                <div class="form-group">
+                    <label class="font-weight-bold">Contact No</label>
+                    <input type="text" class="form-control" formControlName="contact"/>
+                    <span class="alert-danger " *ngIf="frmClient.controls['contact'].hasError('pattern')">Please Enter Digits Only...</span>
+
+    
+                </div>
+                <div>
+                    <button class="btn btn-primary">Submit</button>
+                </div>
+    
+            </div>
+    
+        </div>
+    
+    </div>
+</form>
+</div>
